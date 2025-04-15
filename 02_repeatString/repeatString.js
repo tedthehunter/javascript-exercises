@@ -1,11 +1,9 @@
 const repeatString = function(string, num) {
-    //Initialize result variable
-    //Start FOR loop, loop num times
-        //each loop, concat string to result
-    //return result
     let result = '';
 
-    
+    for (let i = 0; i < num; i++) {
+        result += string;
+    }
 
     return result;
 };
