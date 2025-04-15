@@ -3,6 +3,11 @@ const repeatString = function(string, num) {
     //Start FOR loop, loop num times
         //each loop, concat string to result
     //return result
+    let result = '';
+
+    
+
+    return result;
 };
 
 // Do not edit below this line
