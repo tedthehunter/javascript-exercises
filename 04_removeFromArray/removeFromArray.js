@@ -1,10 +1,4 @@
 const removeFromArray = function(inputArray) {
-    //LOOK up how to handle multiple optional arguments
-    //look up how to modify array in place
-    //take input array and remove any instances of other arguments
-
-    //for each character in array, if removals.includes(character), remove from inputArray
-    //return modified array
 
     let removalCharacters = [];
 
@@ -12,13 +6,14 @@ const removeFromArray = function(inputArray) {
         removalCharacters.push(arguments[i]);
     }
 
-    for (const item in inputArray) {
-        if (removalCharacters.includes(item)) {
-            inputArray.
+    for (let i = 0; i < inputArray.length; i++) {
+        if (removalCharacters.includes(inputArray[i])) {
+            inputArray.splice(i, 1);
+            i = -1; //if item removed, loop must restart
         }
     }
 
-
+    return inputArray;
 };
 
 // Do not edit below this line
