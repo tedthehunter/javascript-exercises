@@ -1,10 +1,18 @@
 const sumAll = function(num1, num2) {
-    //list all nums between num1 and num2, inclusive
-    //iterate through list, adding each num to result
-    //return result
-    let sum = 0;
-    for (let i = num1; i = num2; i++) {
+    //if either input typeof, return 'ERROR'
+    //if either input % 1 != 0, return 'ERROR'
+    //order args from small to large
+    //plug into for loop
 
+    for (arg in arguments) {
+        if (arg % 1 != 0) {
+            return 'ERROR';
+        }
+    }
+    
+    let sum = 0;
+    for (let i = num1; i <= num2; i++) {
+        sum += i;
     }
     return sum;
 };
