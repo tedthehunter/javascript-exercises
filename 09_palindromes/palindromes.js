@@ -6,7 +6,7 @@ const palindromes = function (string) {
     modifiedString = modifiedString.toLowerCase();
     let inputArray = modifiedString.split('');
     let reversedArray = inputArray.reverse();
-    return inputArray == reversedArray;
+    return inputArray === reversedArray;
 };
 
 // Do not edit below this line
