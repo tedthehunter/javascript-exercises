@@ -3,9 +3,9 @@ const palindromes = function (string) {
     modifiedString = modifiedString.replaceAll('!', '');
     modifiedString = modifiedString.replaceAll(',', '');
     modifiedString = modifiedString.replaceAll('.', '');
-    //tolowercase
-    //split to array
-    //copy array and reverse
+    modifiedString = modifiedString.toLowerCase();
+    let inputArray = modifiedString.split('');
+    let reversedArray = inputArray.reverse();
     //return array == reverse
 };
 
