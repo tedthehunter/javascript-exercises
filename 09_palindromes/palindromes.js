@@ -1,6 +1,8 @@
 const palindromes = function (string) {
     let modifiedString = string.replaceAll(' ', '');
-    //remove punctuation
+    modifiedString = modifiedString.replaceAll('!', '');
+    modifiedString = modifiedString.replaceAll(',', '');
+    modifiedString = modifiedString.replaceAll('.', '');
     //tolowercase
     //split to array
     //copy array and reverse
