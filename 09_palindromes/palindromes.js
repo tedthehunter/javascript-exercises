@@ -1,15 +1,16 @@
 const palindromes = function (string) {
-    //define left and right pointers
-        //initialize to first and last character of string
-    //WHILE right pointer is greater than left pointer
-        //increment/decrement until pointing to a character
-            //determine character each is pointing at
-            //if not punctuation, stay
-            //else increment/decrement
-        //compare characters
-            //if equal, continue
-            //if unequal, return FALSE
-    //RETURN TRUE
+    
+    const alphanumerical = 'abcdefghijklmnopqrstuvwxyz0123456789';
+
+    const cleanedString = string
+        .toLowerCase()
+        .split('')
+        .filter((character) => alphanumerical.includes(character))
+        .join('');
+
+    const reversedString = cleanedString.split('').reverse().join('');
+
+    return cleanedString === reversedString;
 };
 
 // Do not edit below this line
