@@ -1,9 +1,13 @@
 const findTheOldest = function(people) {
-    //SORT array
-        //sort function compares first person's death date - birth date
-            //to the second persons
-    //RETURN array[0]
-    people.sort((firstPerson, secondPerson) => (firstPerson.yearOfDeath - firstPerson.yearOfBirth) - (secondPerson.yearOfDeath - secondPerson.yearOfBirth));
+    
+    const peopleSort = (firstPerson, secondPerson) => {
+        const firstPersonAge = firstPerson.yearOfDeath - firstPerson.yearOfBirth;
+        const secondPersonAge = secondPerson.yearOfDeath - secondPerson.yearOfBirth;
+
+        return firstPersonAge - secondPersonAge;
+    }
+
+    people.sort(peopleSort);
     console.log(people);
     return people.at(-1);
 };
