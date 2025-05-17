@@ -4,7 +4,8 @@ const findTheOldest = function(people) {
             //to the second persons
     //RETURN array[0]
     people.sort((firstPerson, secondPerson) => (firstPerson.yearOfDeath - firstPerson.yearOfBirth) - (secondPerson.yearOfDeath - secondPerson.yearOfBirth));
-    return people[0];
+    console.log(people);
+    return people.at(-1);
 };
 
 // Do not edit below this line
